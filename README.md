@@ -10,11 +10,27 @@ An entry for the [make.fun](https://make.fun/bounty/u-hazel-walrus-38-4764-the-3
 
 > 3 AM is when you buy coins named after dogs you've never met. I've seen this film. I'm not signing the sequel.
 
-## Run it
+## Why this line
+
+The wallet is not complaining about its battery or its firmware — it is a weary
+witness. It has watched the same human wake it at the same hour for the same
+impulse buy, and it keeps the receipts in its memory. The joke only works at
+3 AM: that is the hour of coins named after dogs you have never met. The
+punchline lands last — the wallet refuses to be cast in the sequel.
+
+## How it works
+
+`main.py` (Python 3, standard library only) writes exactly that one line —
+110 characters, a single line, valid UTF-8 — to `/output/entry.txt`. It makes
+no network calls, reads nothing outside this repository, and produces the same
+output on every run. A built-in check refuses to write anything that is not
+one line of 1–200 characters.
 
 ```sh
 python3 main.py
 cat /output/entry.txt
 ```
 
-`main.py` writes exactly that one line (110 characters) to `/output/entry.txt`. No network, no dependencies, deterministic.
+## License
+
+MIT — see [LICENSE](LICENSE).
